@@ -12,7 +12,7 @@
 :stopPlaying:
 :susie:Kris.. Didn't see you there.
 :playAnim:lookup
-:susie:You uh, didn't see that... Right.
+:susie:You uh, didn't see that... Right?
 :playAnim:sus
 :sus-smile:Ah, quiet kid huh?
 :startPlaying:
@@ -28,18 +28,18 @@
 :playSound:delta/locker
 :timer:2
 :stopPlaying:
-:sussy:QUIET PEOPLE PISS ME OFF
+:sussy:QUIET PEOPLE PISS ME OFF.
 :startPlaying:
 :playMusic:delta/susie
 :timer:2.75
 :stopPlaying:
-:sus-smirk:Now then, my little buddy.
-:sus-smirk:I have, another question for you.
+:sus-smirk:Now then, little buddy.
+:sus-smirk:I have another question for you.
 :susie:How do you feel...
 :pauseMusic:
 :playAnim:OHNO
 :setTxtSpeed:.1
-:sussy:ABOUT GETTING YOUR FACE RIPPED OFF.
+:sussy:ABOUT GETTING YOUR FACE RIPPED OFF?
 :setTxtSpeed:.05
 :startPlaying:
 :playAnim:yum
@@ -72,4 +72,4 @@
 :playAnim:smile
 :sus-smile:But hey, since I've got nothing better to do.
 :playAnim:WTF
-:sussy:MIGHT AS WELL RIP YOUR THROAT OUT.
+:sussy:MIGHT AS WELL RIP YOUR THROAT OUT INSTEAD.
