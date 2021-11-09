@@ -3,6 +3,11 @@ body{
     margin:0;
 }
 
+.game{
+    border: 5px grey;
+    margin: auto;
+}
+
 .outlinehead{
     border: 5px solid slategray;
     border-radius: 3px;
