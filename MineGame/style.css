@@ -1,0 +1,51 @@
+body{
+    background-color: #ebf0f4;
+    margin:0;
+}
+
+.game{
+    border: 5px grey;
+    margin: auto;
+}
+
+.outlinehead{
+    border: 5px solid slategray;
+    border-radius: 3px;
+    background-color: #e2e6e9;
+    text-align:center;
+    padding:5px 10px;
+    max-width: 300px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.topmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #6f7b87;
+  position: sticky;
+}
+
+.topmenu li {
+  float: left;
+}
+
+.topmenu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.topmenu li a:hover {
+  background-color: #536276;
+}
+
+.topmenu li a.active {
+  color: white;
+  background-color: DeepSkyBlue;
+}
