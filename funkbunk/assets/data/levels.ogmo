@@ -6,9 +6,9 @@
   "gridColor": "#3c4049cc",
   "anglesRadians": true,
   "directoryDepth": 5,
-  "layerGridDefaultSize": {"x": 8, "y": 8},
+  "layerGridDefaultSize": {"x": 16, "y": 16},
   "levelDefaultSize": {"x": 320, "y": 240},
-  "levelMinSize": {"x": 1280, "y": 720},
+  "levelMinSize": {"x": 640, "y": 368},
   "levelMaxSize": {"x": 1280, "y": 720},
   "levelValues": [],
   "defaultExportMode": ".json",
@@ -28,7 +28,7 @@
     },
     {
       "definition": "entity",
-      "name": "entities",
+      "name": "entites",
       "gridSize": {"x": 16, "y": 16},
       "exportID": "55022168",
       "requiredTags": [],
@@ -74,6 +74,6 @@
     }
   ],
   "tilesets": [
-    {"label": "tiles", "path": "../images/blocks.png", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABACAYAAADS1n9/AAAAAXNSR0IArs4c6QAAAPBJREFUeJzt27FthEAQQNE9y03QD6VQFqXQD2XYsdNjdfLqv5cRMNrgB4jRvsZDx3H8PJ3B+87zfD15/3vGIe77njHm47ZtG2Osf/4npgQwxhj7vs8a9RHXdf15Xv387/qaMoVlCSBOAHECiBNAnADiBBAngDgBxAkgTgBx03YBq5v1b301AhhztmqrygfwdJ++Ot8AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEEDftdnD1fv3qpgRQvl8PAAAAAAAAAPDf/AKqChdBAPUFzgAAAABJRU5ErkJggg==", "tileWidth": 16, "tileHeight": 16, "tileSeparationX": 0, "tileSeparationY": 0, "tileMarginX": 0, "tileMarginY": 0}
+    {"label": "tiles", "path": "../images/blocks.png", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABACAYAAADS1n9/AAAAAXNSR0IArs4c6QAAARVJREFUeJzt3MENgkAQQNHB2MTWQBuUQgP0Qyn0Qxl6MlGPuxPM+P+7eXDZw49rGHGKQeu6PkbXUL9936eR998zNnGeZ8Yyl2utRUT9/Y9ICSAiYlmWrKUucRzHx+vq++91S1lFZRkAnAHAGQCcAcAZAJwBwBkAnAHAGQCcAcClzQKqy7q3Xo0BRM5UrSp8APM8//T627YNzfNH+R0AzgDgDADOAOAMAM4A4AwAzgDgDADOAOAMAM4A4AwADj8N7FX92cIXPwEGtNbK/5bAAOA8AgZU/V+BdwbQqeqZ/80jAM4A4AwAzgDgDADOAOAMAM4A4AwAzgDgDAAubRZAfb6+upQAqs/EJUmSJEmSJEmSJEmS/skTAR8eXijLQcsAAAAASUVORK5CYII=", "tileWidth": 16, "tileHeight": 16, "tileSeparationX": 0, "tileSeparationY": 0, "tileMarginX": 0, "tileMarginY": 0}
   ]
 }
