@@ -24,7 +24,7 @@
       "exportID": "55026201",
       "exportMode": 0,
       "arrayMode": 0,
-      "defaultTileset": "New Tileset"
+      "defaultTileset": "tiles"
     },
     {
       "definition": "entity",
@@ -71,6 +71,120 @@
       "nodeGhost": true,
       "tags": [],
       "values": []
+    },
+    {
+      "exportID": "72395102",
+      "name": "1jump",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [],
+      "texture": "../images/1jump.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPZJREFUOI2lk71KA0EUhb+7xJVE8BGCICFtXsHaIo2tYGGQtBZp7W3FKqYK2FsJdnkFO0EFfYkkxMxJEXaZmexIYG81zD3n49z5gZpl//S0jzYFEEB78ATA7/g6qc+S5puJsBBUkWqHKICT26mTAGm7I4HEz8NVFvssNp/ev6xYOxAoBBiC77uLhu8139x5fF0ikHNGRQIJcLKvUf+ggJSAzvgtnM1sgYQctjX/Hfr9z+F5CIgPp/s8m/sJPi7PmrEGsGAe/zyyo1wFQCr5O9fYiDdKZSt3BcCk5INLAvwEfoT9Aa08aQp0qcZ7r3tctY6r9meqXRs+YnD/pkQRdAAAAABJRU5ErkJggg=="
+    },
+    {
+      "exportID": "72391129",
+      "name": "2jump",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [],
+      "texture": "../images/2jump.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAR9JREFUOI2Nk6FLBEEUxn+z3B7rcRoViwenYDGYLNrEZLD4B1zwgsVoFcw2g0GL3SSYLIJcEQyaVTiDcNdEOBg55hl0ltm52XE/eDCzvO+335thFHGJt1d+w8QH37zQvQDg/Xwv6CkDFP4cg4QAAnA7OwJga9gAoHVwaRChf9pJXK8PKJitLKR9fDVG4O1ot2Yh6j+zD1k8uf7GiHo93EndBFGzD1k6uwHgZX8bZc13858IChGnAkdkIVYKkIfWAEFhPLNdG2+/OWjm6fMErh7bH4Uka/250EQKIPlbuMVUqsls1TUAK/dPX44xn61GQFmq88hGfnuT6WwiaTmgrgsjADyvLs9UB6S67CYqPSYBGG30MALN3nqst9pjivTxA97ofUR8OACWAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "72394155",
+      "name": "door",
+      "limit": -1,
+      "size": {"x": 16, "y": 32},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [],
+      "texture": "../images/door.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAAAXNSR0IArs4c6QAAAOpJREFUSImtVVsOwyAM87jXpGn3vxLOPigUmgeUtRIqrUtsQ9K8Pu+vkBkkkUkw1/lxP57bu0yQuX2bRATnIEQEHN51GEXhLYC96BwenuwFRUllNLEzAANWHxMhOCooHl3/jhXDQsza5uwC7G5gsImGf45KOAZYlG1gyWVVR0jTSvrH/7gHF4+rlsxE4iQQO6yrhXnWWWrdY1wdYSZSMY4qaQW4499PpBsn8lAtGB71Iu0/OIXNRFpivah9sBY8JYwtbf3S4r4QZJ1FEtbCzH8JMPEYYQB0b/RZdd9oAVazrsfqFbY2YSwfAH61I+ay3faBcwAAAABJRU5ErkJggg=="
     }
   ],
   "tilesets": [
