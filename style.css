@@ -1,51 +1,89 @@
 body{
-    background-color: #ebf0f4;
+    font-family: Ubuntu, sans-serif;
+    background-color: #2b3240;
     margin:0;
+    padding: 5px;
 }
 
-.game{
-    border: 5px solid grey;
-    margin: auto;
-}
-
-.outlinehead{
-    border: 5px solid slategray;
-    border-radius: 3px;
-    background-color: #e2e6e9;
+h1 {
+    font-size: 46px;
+    color:#fafcff;
     text-align:center;
-    padding:5px 10px;
-    max-width: 300px;
-    margin: 15px auto;
-    overflow: hidden;
+    margin: 5px 0px 0px 0px;
+    transition: font-size .15s;
 }
 
-.topmenu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  overflow: hidden;
-  background-color: #6f7b87;
-  position: sticky;
+h1:hover {
+    font-size: 47.25px;
 }
 
-.topmenu li {
-  float: left;
+h2 {
+    font-size: 12px;
+    color:#c7c7c7;
+    text-align:center;
+    margin:0;
+    transition: font-size .15s;
+}
+h2:hover {
+    font-size: 12.5;px
 }
 
-.topmenu li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
+h3{
+    color:#f0f1f5;
+    font-size: 30px;
+    margin-bottom:15px;
 }
 
-.topmenu li a:hover {
-  background-color: #536276;
+p{
+    font-size: 14px;
+    color:#b9bec7;
+    padding: 10px;
+    text-align:center;
+    border:2px solid  #94a0b8;
+    outline: 4px solid #525f7a;
+    border-radius:3px;
+    margin:25px auto;
+    width: 40%;
+    font-weight: bold;
+    background-color: #525f7a;
 }
 
-.topmenu li a.active {
-  color: white;
-  background-color: DeepSkyBlue;
+.button{
+    background-color: #495263;
+    color: #8d9ab3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .3s;
+    border-radius: 3px;
+}
+
+.button:hover{
+    background-color: #576175;
+}
+
+.tooltiptext {
+    visibility:hidden;
+    width: 180px;
+    background-color:  #3d475c;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding:5px 5px;
+    position: absolute;
+    margin-left:20px;
+    
+    opacity:0;
+    transition: opacity .5s;
+}
+
+.button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#icon {
+    color:#ffffff;
+    font-size: 35px;
+    margin: 15px 50%;
 }
