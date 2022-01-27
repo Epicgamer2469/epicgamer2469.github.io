@@ -18,16 +18,8 @@ h1 {
     transition: font-size .15s ease-out;
 }
 
-@media screen and (max-width: 992px){
-    h1 {
-        font-size: 62px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 72px;
-    }
+h1:hover {
+    font-size: 47px;
 }
 
 h2 {
@@ -80,7 +72,8 @@ p{
     overflow: hidden;
     background-color: #353e4d;
     box-shadow: 0 4px 8px 0 #00000048;
-    transition: all .25s ease-out;
+    top: 0;
+    position: sticky;
 }
 
 .top .link{
@@ -108,32 +101,12 @@ p{
     background-color: #525d70;
 }
 
-@media screen and (max-width: 992px){
-    .top {
-        box-shadow: 0 6px 10px 0 #00000048;
-    }
-    .top .link{
-        font-size: 20;
-    }
-    .top #logo {
-        width: 70px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .top {
-        box-shadow: 0 7px 11px 0 #00000048;
-    }
-    .top .link{
-        font-size: 24;
-    }
-    .top #logo {
-        width: 80px;
-    }
-}
-
 #icon {
     color:#ffffff;
     font-size: 35px;
     margin: 15px 50%;
+}
+
+.info {
+    margin-top: 1500;
 }
