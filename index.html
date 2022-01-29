@@ -1,26 +1,34 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     </head>
     <body>
-        <div class="top">
-            <a href="#socials" class="link">Socials</a>
-            <a href="#games" class="link">Games</a>
-            <a href="#info" class="link">Info</a>
+        <div class="top" data-aos="fade-down" data-aos-duration="800" data-aos-mirror="false">
+            <a href="socials.html" class="link">Socials</a>
+            <a href="games.html" class="link">Games</a>
+            <a href="index.html#info" class="link">Info</a>
 
             <a href="index.html"><img id="logo" src="home/EPIC.png"></a>
         </div>
 
-        <h1>
-            Hi, I'm Epic.
-        </h1>
-        <h2>I suck at CSS.</h2>
+        <h1 data-aos="fade-right">Hi, I'm Epic.</h1>
+        <h2 data-aos="fade-left">I make stuff (sometimes)</h2>
 
-        <div class="info" id="info">
-            <h1>hi</h1>
+        <div class="info">
+            <a>why are you down here</a>
         </div>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                mirror: true,
+                duration:600,
+                ease:'ease-out-cubic'
+            });
+        </script>
     </body>
 </html>
