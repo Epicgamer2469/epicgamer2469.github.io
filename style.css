@@ -91,10 +91,12 @@ h3{
 .social {
     width: 10vw;
     margin: 0vw 1vw;
-    transition: transform .2s ease-in-out;
+    opacity: .6;
+    transition: all .2s ease-in-out;
 }
 
 .social:hover {
+    opacity: 1;
     transform: scale(1.1);
 }
 
