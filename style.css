@@ -144,7 +144,15 @@ h3{
     min-height: 25vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 14vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
     .social {
         width: 20vw;
         margin: 0vw 1vw;
