@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     margin-top:0px;
-    font-size: 4vw;
+    font-size: 3vw;
     color:#c7c7c7;
     text-align:center;
 }
@@ -34,20 +34,6 @@ h3{
     color: #f0f1f5;
     font-size: 30px;
     margin-bottom:15px;
-}
-
-p{
-    font-size: 14px;
-    color:#b9bec7;
-    padding: 10px;
-    text-align:center;
-    border:2px solid  #94a0b8;
-    outline: 4px solid #525f7a;
-    border-radius:3px;
-    margin:25px auto;
-    width: 40%;
-    font-weight: bold;
-    background-color: #525f7a;
 }
 
 .buttonSec {
@@ -102,15 +88,56 @@ p{
     background-color: #525d70;
 }
 
-#icon {
-    color:#ffffff;
-    font-size: 35px;
-    margin: 15px 50%;
+.social {
+    width: 100px;
+    margin: 0vw 1vw;
+    transition: transform .2s ease-in-out;
 }
 
-.info {
-    margin-top: 2000px;
-    margin-bottom:25px;
-    color:#fafcff;
+.social:hover {
+    transform: scale(1.1);
+}
+
+#info {
+    text-align: center;
+    width: 50%;
+    font-size: 3vw;
+    color:#c6daf3;
     text-align:center;
+}
+
+#discordTxt {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    font-size: 2vw;
+    transform: translateY(.25vw) translateX(-1.5vw);
+    transition: all .25s ease-in-out;
+}
+
+#discord:hover #discordTxt {
+    opacity: 1;
+    cursor: text;
+    transform: translateY(-1.75vw) translateX(-1.5vw);
+}
+
+#discord:hover {
+    cursor: pointer;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 140vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
 }
