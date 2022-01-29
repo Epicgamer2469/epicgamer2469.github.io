@@ -141,3 +141,29 @@ h3{
     align-items: center;
     min-height: 25vh;
 }
+
+@media screen and (max-width: 600px) {
+    .social {
+        width: 20vw;
+        margin: 0vw 1vw;
+        transition: transform .2s ease-in-out;
+    }
+
+    #info {
+        text-align: center;
+        width: 50%;
+        font-size: 5vw;
+        color:#c6daf3;
+        text-align:center;
+    }
+
+    #discordTxt {
+        position: absolute;
+        text-align: center;
+        margin: 0;
+        opacity: 0;
+        font-size: 3.5vw;
+        transform: translateY(.25vw) translateX(-1.5vw);
+        transition: all .25s ease-in-out;
+    }
+}
