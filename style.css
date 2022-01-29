@@ -89,7 +89,7 @@ h3{
 }
 
 .social {
-    width: 100px;
+    width: 10vw;
     margin: 0vw 1vw;
     transition: transform .2s ease-in-out;
 }
