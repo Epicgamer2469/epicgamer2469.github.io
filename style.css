@@ -133,7 +133,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 140vh;
+    margin-top: 10vh;
 }
 
 .bottom {
@@ -141,7 +141,10 @@ h3{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 25vh;
+
+    /* bottom of the page */
+    margin-top: 10vh;
+    position: bottom;
 }
 
 @media screen and (max-width: 800px) {
