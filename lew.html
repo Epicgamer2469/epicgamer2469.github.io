@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>EpicGamer</title>
+        <link rel="icon" href="home/icon.png">
+    </head>
+    <body>
+        <p id="text">
+            hi
+        </p>
+        <script>
+            var data = "fameleh my name's Lewis welcome to another vlog *sigh* today I'm just going to talk about some things that happened in my life so I now have well I've been chased by some dogs while walking home from high school not going to say where my high school is 'cuz most of you from my high school probably watching and if you are watching this hai and I know I my voice sounds different different on video than it does in real life I honestly don't know why UMPH maybe it's because I'm sick or I'm just stupid which I'd admit yes I am I'm quite stupid but hey at least I actually put effort into making these videos so I've been chased by some dogs while this day and the day well there's I've only been chased by dogs like three times once was on Wednesday yeah Wednesday two gray dogs were chasing me while walking down well there's a bit between Dundas Street and Lumley Street that you can walk through and I was walking through there until two dogs were right in front of me and started chasing me *sigh* I mean I'm fine but tthanks for the heart attack stupid dogs like no that was not my pillow that I just threw and on Thursday I was chased by a brown dog but luckily I didn't get a heart attack from that and the owner accidentially saw the dogs chasing me he called them back and then I just started walking back home and Friday I was chased by a brown dog twice I was walking between Lumley Court and Lumley Street well through Lumley Place and Lumley Street I don't know why this like Lumley Place Lumley Court Lumley Street like that's just weird just call it Lumley Street and move on with life like jeez so another thing is we hit thirty followers on instagram thats pretty cool so thank you everyone who is already following me on Instagram if you're not then username is Lewis Alexander Thompson no spaces or caps *burps* sorry for that burp stupid throat gonna make me sick UMPH anyways username is Lewis Alexander Thompson no spaces or caps go follow me if you haven't I'll see you guys later goodbye *dabs*";
+            var split = data.split(' ');
+            const length = Math.floor(Math.random() * 6) + 10;
+            const punct = ['!', '?', '.'];
+            generateTxt();
+
+            function generateTxt() {
+                let txt = "";
+                for (let i = 0; i < length; i++) {
+                    if(i != 0) txt += ' ';
+                    txt += split[Math.floor(Math.random() * split.length)];
+                }
+                var final = txt[0].toUpperCase() + txt.substring(1) + punct[Math.floor(Math.random() * punct.length)];
+                document.getElementById("text").textContent = final;
+            }
+        </script>
+    </body>
+</html>
