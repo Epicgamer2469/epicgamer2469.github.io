@@ -1,0 +1,82 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>EpicGamer</title>
+        <link rel="icon" href="home/icon.png">
+    </head>
+    <body>
+        <div markdown="1">
+
+            # Making Encounter Songs
+            All of the special parts of an encounter song are initiated through a script and events, everything you need to know to make one is explained below.
+            
+            ## Initializing an Encounter Song
+            All encounter songs are initialized by LUA scripts in the song's data folder. They set important values and add characters for the song. Here's an example script used in `Smorgasboard`.
+            ```lua
+            function onCreate()
+            -- Sets the `isEncounter` variable to true, which is needed for a few things when starting the song
+            -- We set it in onCreate so the value is there to be checked before some other initialization
+            setEncounter()
+            end
+            
+            -- Everything here is in onCreatePost so it happens after the original characters are initialized so we can manipulate them
+            function onCreatePost()
+            -- "Swaps" the player/opponent positions
+            setProperty('boyfriendGroup.x', 0)
+            setProperty('dadGroup.x', 500)
+            
+            -- Creates a party member
+            createPartyMember('ralsei_flip', getProperty('boyfriend.x') - 325, getProperty('boyfriend.y') - 25, 1)
+            
+            -- Creates 2 new opponents
+            createOpponent('hath_flip', getProperty('dad.x') - 700, getProperty('dad.y') - 500, 0)
+            createOpponent('jigsawry_flip', getProperty('dad.x') - 80, getProperty('dad.y') - 30, 2)
+            
+            end
+            ```
+            ## Script Functions
+            ### setEncounter()
+            Makes the current song an encounter song. This is used for the forced middlescroll, and will control whether the player will be able to attack the opponents and end the song that way. We can't use `setProperty` because from my experience booleans don't transfer over for whatever reason.
+            
+            ### createPartyMember(name:String, x:Float, y:Float, index:Int)
+            Adds a character to the player side to be used later.
+            + `name` - The name of the character to be created, this should usually end with the `_flip` postfix because the versions with it have special camera offsets.
+            + `x` - The x position for the character to be placed,  you can use `getProperty` to get the original player's x position and move it in relation to that as shown in the example above.
+            +  `y` - The y position for the character to be placed,  you can use `getProperty` to get the original player's y position and move it in relation to that as shown in the example above.
+            +  `index` - Basically the "layer" for the character to be placed on, this number is also used later for mid-song events so keep it in mind. 0 is the lowest, more is higher up. Boyfriend starts at index 0 normally so if you want one below him set this to 0 and boyfriend will be moved up to index 1.
+            +
+            ### createOpponent(name:String, x:Float, y:Float, index:Int)
+            Adds a character to the opponent side to be used later.
+            + `name` - The name of the character to be created, this should usually end with the `_flip` postfix because the versions with it have special camera offsets.
+            + `x` - The x position for the character to be placed,  you can use `getProperty` to get the original opponent's x position and move it in relation to that as shown in the example above.
+            +  `y` - The y position for the character to be placed,  you can use `getProperty` to get the original opponent's y position and move it in relation to that as shown in the example above.
+            +  `index` - Basically the "layer" for the character to be placed on, this number is also used later for mid-song events so keep it in mind. 0 is the lowest, more is higher up. Dad starts at index 0 normally so if you want one below him set this to 0 and dad will be moved up to index 1.
+            
+            ## Mid-song Events
+            Here are the custom events used for encounter songs explained in further detail.
+            
+            ### Swap Main Player
+            Changes the main player that is currently singing.
+            
+            `Value 1:` The index of the new character to switch to, this will be the same value set in the song script.
+            
+            ### Swap Main Opponent
+            Changes the main opponent that is currently singing.
+            
+            `Value 1:` The index of the new character to switch to, this will be the same value that was set in the song script.
+            
+            ### Toggle Player Duet
+            Toggles a duet on the player's side.
+            
+            `Value 1:` A comma-separated list of characters that will sing along with the main one, not inclusive of the current main one. Leave this value empty if you want to turn off the current duet.
+            >Example: if I wanted all 3 players to sing together, and the current main player was at index 1, I would put "0,2" for this value.
+            
+            ### Toggle Opponent Duet
+            Toggles a duet on the opponent's side.
+            
+            `Value 1:` A comma-separated list of character indexes that will sing along with the main one, not inclusive of the current main one. Leave this value empty if you want to turn off the current duet.
+            >Example: if I wanted all 3 opponents to sing together, and the current main opponent was at index 1, I would put "0,2" for this value.
+            
+        </div>
+    </body>
+</html>
