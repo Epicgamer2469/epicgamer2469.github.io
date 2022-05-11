@@ -23,3 +23,10 @@ h1 {
     margin-bottom:0px;
 }
   
+h3 {
+    font-size: 3vw;
+    color:#fafcff;
+    text-align:center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
