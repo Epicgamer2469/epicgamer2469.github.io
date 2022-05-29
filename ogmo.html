@@ -36,14 +36,37 @@ Now you can go ahead and make a basic outline of the level, I usually use the re
 <img src="https://media.discordapp.net/attachments/411618082495266816/980296702068138064/unknown.png?width=917&amp;height=274" alt=""><br>
 It doesn’t have to be perfect, just keeping the lines on the inside straight is good enough, because the player will never be able to see or interact with what’s outside.</p>
 <h3 class="code-line" data-line-start=35 data-line-end=36><a id="Entities_35"></a>Entities</h3>
-<p class="has-line-data" data-line-start="36" data-line-end="44">Switch to the <code>entities</code> layer.<br>
+<p class="has-line-data" data-line-start="36" data-line-end="40">Switch to the <code>entities</code> layer.<br>
 <img src="https://cdn.discordapp.com/attachments/411618082495266816/980297343616299039/unknown.png" alt=""><br>
 If you’re just fixing a level, you should only need to move and resize the entities, but for these purposes I’ll do them from scratch.<br>
-All entities are explained seperately in the next section but the 2 most important ones are the door and player.<br>
+All entities are explained seperately in the next section but the 2 most important ones are the door and player.</p>
+<p class="has-line-data" data-line-start="41" data-line-end="45">For the door, first select it and place it down. Next use the resize tool to fit it to the desired size. And finally use the inspector in the bottom right to change the <code>nextRoom</code> value to the room the door should take the player to.<br>
 <img src="https://cdn.discordapp.com/attachments/411618082495266816/980299131266404362/unknown.png" alt=""><br>
-For the door, first select it and place it down. Next use the resize tool to fit it to the desired size. And finally use the inspector in the bottom right to change the <code>nextRoom</code> value to the room the door should take the player to.<br>
-<img src="https://cdn.discordapp.com/attachments/411618082495266816/980299770729996359/unknown.png" alt=""><br>
-Same story as the door, except the resizing and values. <code>fromRoom</code> is the room name that the player would be coming from if spawning at that position. <code>anim</code> is the direction the player should start out facing when spawning.</p>
-<p class="has-line-data" data-line-start="45" data-line-end="47">And that’s pretty much it for the basics, the level should now be finished at it’s base.<br>
+For the player it’s the same story as the door, except the resizing and values. <code>fromRoom</code> is the room name that the player would be coming from if spawning at that position. <code>anim</code> is the direction the player should start out facing when spawning.<br>
+<img src="https://cdn.discordapp.com/attachments/411618082495266816/980299770729996359/unknown.png" alt=""></p>
+<p class="has-line-data" data-line-start="46" data-line-end="48">And that’s pretty much it for the basics, the level should now be finished at it’s base.<br>
 <img src="https://cdn.discordapp.com/attachments/411618082495266816/980300613751558234/unknown.png" alt=""></p>
+<h2 class="code-line" data-line-start=49 data-line-end=50><a id="Entity_List_49"></a>Entity List</h2>
+<h3 class="code-line" data-line-start=50 data-line-end=51><a id="Player_50"></a>Player</h3>
+<p class="has-line-data" data-line-start="51" data-line-end="52">A spawn point for the player at the specified position.</p>
+<ul>
+<li class="has-line-data" data-line-start="53" data-line-end="54"><code>fromRoom:</code> If the player is coming from the specified room, this is the entity they will be set to.</li>
+<li class="has-line-data" data-line-start="54" data-line-end="56"><code>anim:</code> The direction the player should start from when loading into the level.</li>
+</ul>
+<h3 class="code-line" data-line-start=56 data-line-end=57><a id="Enemy_56"></a>Enemy</h3>
+<p class="has-line-data" data-line-start="57" data-line-end="58">An enemy object that will chase the player, and play a song when collided with.</p>
+<ul>
+<li class="has-line-data" data-line-start="59" data-line-end="60"><code>enemyName:</code> Basically the type of enemy that should be spawned.</li>
+<li class="has-line-data" data-line-start="60" data-line-end="63"><code>songList:</code> A comma seperated list of songs to be randomly selected from.
+<blockquote>
+<p class="has-line-data" data-line-start="61" data-line-end="62">Example: “rudinn buster,diamond cutter,rudinn necklace”</p>
+</blockquote>
+</li>
+</ul>
+<h3 class="code-line" data-line-start=63 data-line-end=64><a id="This_is_unfinished_63"></a>This is unfinished…</h3>
+<p class="has-line-data" data-line-start="64" data-line-end="65">More entities being listed soon</p>
+<h2 class="code-line" data-line-start=66 data-line-end=67><a id="Making_New_Levels_66"></a>Making New Levels</h2>
+<p class="has-line-data" data-line-start="67" data-line-end="70">Right clicking a folder in the file explorer should give you the option to create a blank level file.<br>
+<img src="https://cdn.discordapp.com/attachments/411618082495266816/980304263509049394/unknown.png" alt=""><br>
+You should be able to essentially follow the same princibles as shown above in <code>Editing Levels</code> to create a new one.</p>
 </body></html>
