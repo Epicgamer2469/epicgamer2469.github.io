@@ -51,7 +51,7 @@
 <p class="has-line-data" data-line-start="48" data-line-end="49">These scripts are run when the player enters the room, this is mostly useful when setting up objects for a cutscene or setting certain values like the player’s followers. To add one, copy the template script into the room’s folder, or create a new one. The name doesn’t matter, if it’s in the folder it will be run. Note: certain functions inside are run at different times, see <strong>Script Callbacks</strong> below for more info.</p>
 <h3 class="code-line" data-line-start=50 data-line-end=51><a id="Cutscene_Scripts_50"></a>Cutscene Scripts</h3>
 <p class="has-line-data" data-line-start="51" data-line-end="52">These scripts are run from entities and play out a cutscene following the logic inside the script. The adding process is similar to room scripts, except they go inside of an enclosing <code>cutscene</code> folder inside of the room’s folder.</p>
-<h2 class="code-line" data-line-start=53 data-line-end=54><a id="Writing_Scripts_53"></a>Writing Scripts</h2>
+<h1 class="code-line" data-line-start=53 data-line-end=54><a id="Writing_Scripts_53"></a>Writing Scripts</h1>
 <p class="has-line-data" data-line-start="54" data-line-end="55">This section details what actually goes inside of the scripts, including callbacks, cutscene functions and variables, and some basic examples.</p>
 <h2 class="code-line" data-line-start=56 data-line-end=57><a id="Script_Callbacks_56"></a>Script Callbacks</h2>
 <p class="has-line-data" data-line-start="57" data-line-end="58">These functions are called by the game at certain points and run the code inside of the scripts enclosed.</p>
@@ -60,27 +60,27 @@
 <li class="has-line-data" data-line-start="59" data-line-end="60"><code>function update(elapsed:Float)</code> Called every frame, <code>elapsed</code> is the amount of time passed since the last frame which is only really useful for some complicated coding stuff.</li>
 <li class="has-line-data" data-line-start="60" data-line-end="62"><code>function nextLine(currentLine:Int)</code> This callback is only used in cutscene scripts, and is called every time a new dialogue line should be processed (when the player presses enter).</li>
 </ul>
-<h2 class="code-line" data-line-start=62 data-line-end=63><a id="Cutscene_Functions_and_Variables_62"></a>Cutscene Functions and Variables</h2>
+<h1 class="code-line" data-line-start=62 data-line-end=63><a id="Cutscene_Functions_and_Variables_62"></a>Cutscene Functions and Variables</h1>
 <p class="has-line-data" data-line-start="63" data-line-end="64">These are important things that can be changed and called from inside cutscenes to execute certain actions.</p>
 <p class="has-line-data" data-line-start="65" data-line-end="66">Note: cutscene variables must be accessed through the class by using <code>Cutscene.</code>, but this isn’t necessary for functions, you can also access them that way if you want to though.</p>
-<h3 class="code-line" data-line-start=67 data-line-end=68><a id="Variables_67"></a>Variables</h3>
+<h2 class="code-line" data-line-start=67 data-line-end=68><a id="Variables_67"></a>Variables</h2>
 <ul>
 <li class="has-line-data" data-line-start="68" data-line-end="69"><code>txtSpeed:Float</code> The default speed in seconds each letter should appear, default is .05</li>
 <li class="has-line-data" data-line-start="69" data-line-end="71"><code>canControl:Bool</code> Determines if the player can advance to the next line.</li>
 </ul>
-<h3 class="code-line" data-line-start=71 data-line-end=72><a id="Functions_71"></a>Functions</h3>
-<h4 class="code-line" data-line-start=72 data-line-end=73><a id="nextDialogue_72"></a><code>nextDialogue()</code></h4>
+<h2 class="code-line" data-line-start=71 data-line-end=72><a id="Functions_71"></a>Functions</h2>
+<h4 class="code-line" data-line-start=72 data-line-end=73><a id="nextDialogue_72"></a>nextDialogue()</h4>
 <p class="has-line-data" data-line-start="73" data-line-end="74">Advances to the next line of dialogue</p>
-<h4 class="code-line" data-line-start=74 data-line-end=75><a id="saycharacterString_emotionString_dialogueString_74"></a><code>say(character:String, emotion:String, dialogue:String)</code></h4>
+<h4 class="code-line" data-line-start=74 data-line-end=75><a id="saycharacterString_emotionString_dialogueString_74"></a>say(character:String, emotion:String, dialogue:String)</h4>
 <p class="has-line-data" data-line-start="75" data-line-end="76">Displays the given line of dialogue from the given character</p>
 <ul>
 <li class="has-line-data" data-line-start="76" data-line-end="77"><code>character:</code> The name of the character that the dialogue box comes from, this comes before the <code>-</code> in the image name.</li>
 <li class="has-line-data" data-line-start="77" data-line-end="78"><code>emotion:</code> The emotion the character should be displaying, this comes after the <code>-</code> in the image name. If there is no emotion, leave this argument as a blank string.</li>
 <li class="has-line-data" data-line-start="78" data-line-end="79"><code>dialogue:</code> The dialogue that the box should show, special flags can be written for certain effects, see <strong>Dialogue Flags</strong> for more info</li>
 </ul>
-<h4 class="code-line" data-line-start=79 data-line-end=80><a id="toggleBox_79"></a><code>toggleBox()</code></h4>
+<h4 class="code-line" data-line-start=79 data-line-end=80><a id="toggleBox_79"></a>toggleBox()</h4>
 <p class="has-line-data" data-line-start="80" data-line-end="81">Toggles the visibility of the dialogue box</p>
-<h4 class="code-line" data-line-start=81 data-line-end=82><a id="moveObjectobjectDeltaSprite_directionString_amountFloat_onComplete__Void_speedFloat____1_isRelativeBool____false_81"></a><code>moveObject(object:DeltaSprite, direction:String, amount:Float, onComplete:() -&gt; Void, speed:Float = 1, isRelative:Bool = false)</code></h4>
+<h4 class="code-line" data-line-start=81 data-line-end=82><a id="moveObjectobjectDeltaSprite_directionString_amountFloat_onComplete__Void_speedFloat____1_isRelativeBool____false_81"></a>moveObject(object:DeltaSprite, direction:String, amount:Float, onComplete:() -&gt; Void, speed:Float = 1, isRelative:Bool = false)</h4>
 <p class="has-line-data" data-line-start="82" data-line-end="83">Helper function to move an object (usually a character) in a direction at a standardized speed.</p>
 <ul>
 <li class="has-line-data" data-line-start="83" data-line-end="84"><code>object:</code> The object to be moved (this refers to an actual class instance)</li>
@@ -90,23 +90,23 @@
 <li class="has-line-data" data-line-start="87" data-line-end="88"><code>speed:</code> The speed at which the the object moves, <code>1.6</code> and above is running</li>
 <li class="has-line-data" data-line-start="88" data-line-end="89"><code>isRelative</code> If true, the object will be moved based on their current position, otherwise it will assume world coordinates.</li>
 </ul>
-<h4 class="code-line" data-line-start=89 data-line-end=90><a id="switchRoomroomString_89"></a><code>switchRoom(room:String)</code></h4>
+<h4 class="code-line" data-line-start=89 data-line-end=90><a id="switchRoomroomString_89"></a>switchRoom(room:String)</h4>
 <p class="has-line-data" data-line-start="90" data-line-end="91">Switches the game to the given room</p>
 <ul>
 <li class="has-line-data" data-line-start="91" data-line-end="92"><code>room:</code> The room the game should go to</li>
 </ul>
-<h4 class="code-line" data-line-start=92 data-line-end=93><a id="loadSongsongString_92"></a><code>loadSong(song:String)</code></h4>
+<h4 class="code-line" data-line-start=92 data-line-end=93><a id="loadSongsongString_92"></a>loadSong(song:String)</h4>
 <p class="has-line-data" data-line-start="93" data-line-end="94">Loads the given song with the default difficulty</p>
 <ul>
 <li class="has-line-data" data-line-start="94" data-line-end="95"><code>song:</code> The song to load</li>
 </ul>
-<h4 class="code-line" data-line-start=95 data-line-end=96><a id="playVideovideoString_callback__Void_95"></a><code>playVideo(video:String, callback:() -&gt; Void)</code></h4>
+<h4 class="code-line" data-line-start=95 data-line-end=96><a id="playVideovideoString_callback__Void_95"></a>playVideo(video:String, callback:() -&gt; Void)</h4>
 <p class="has-line-data" data-line-start="96" data-line-end="97">Plays a video</p>
 <ul>
 <li class="has-line-data" data-line-start="97" data-line-end="98"><code>video:</code> The name of the video file to be played</li>
 <li class="has-line-data" data-line-start="98" data-line-end="99"><code>callback:</code> A function to be called when the video is finished</li>
 </ul>
-<h4 class="code-line" data-line-start=99 data-line-end=100><a id="end_99"></a><code>end()</code></h4>
+<h4 class="code-line" data-line-start=99 data-line-end=100><a id="end_99"></a>end()</h4>
 <p class="has-line-data" data-line-start="100" data-line-end="101">Ends the dialogue sequence</p>
 <h2 class="code-line" data-line-start=102 data-line-end=103><a id="Examples_102"></a>Examples</h2>
 <p class="has-line-data" data-line-start="103" data-line-end="104">Okay, that last section is a lot of information to take in, to help you understand how to use those in practice, lets go through some full examples.</p>
