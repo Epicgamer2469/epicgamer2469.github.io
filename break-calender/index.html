@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.cdnfonts.com/css/br-firma" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+        <script src="https://kit.fontawesome.com/07ffb34aaf.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <i onclick="setDarkMode()" class="fa-solid fa-moon" id="dark-button"></i>
+
+        <p id="today" class="text" style="padding-top: 4vw;">It's <span id="date" style="color: var(--text-accent-color);"></span>
+            at <span id="time"></span></p>
+
+        <hr>
+
+        <div class="off-break">
+            <p class="text" style="font-size: 5vw;">The next break starts in:</p>
+        </div>
+        <div class="on-break">
+            <p class="text" style="font-size: 5vw;">You're on break! <br> You go back in:</p>
+        </div>
+
+        <div id="timer" class="text" style="font-size: 6.5vw;">
+            <div id="days">
+                <p class="timer-data" id="days-data"></p>
+                <p class="timer-title">DAYS</p>
+            </div>
+            <div id="hours">
+                <p class="timer-data" id="hours-data"></p>
+                <p class="timer-title">HOURS</p>
+            </div>
+            <div id="minutes">
+                <p class="timer-data" id="minutes-data"></p>
+                <p class="timer-title">MINUTES</p>
+            </div>
+        </div>
+
+        <div class="off-break">
+            <p class="text" style="font-size: 3vw;"><span id="length"></span> days long <span id="break-dates"></span></p>
+        </div>
+        <div class="on-break">
+            <p class="text" style="font-size: 3vw;"><span id="date-back"></span></p>
+        </div>
+    </body>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</html>
